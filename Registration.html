@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to LearnHub</title>
+    <!-- icon from Fontawesome -->
+    <script src="https://kit.fontawesome.com/964aa041f9.js" crossorigin="anonymous"></script>
+    <!-- Css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Tab bar icon  -->
+    <link rel="icon" type="image/png" href="assets/Logo-1.png" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Hearder -->
+    <header>
+        <nav>
+            <div class="bar">
+                <div class="logo">
+                    <img src="assets/Logo-1.png" alt="LernHub LOGO" title="LernHub LOGO">
+                </div>
+                <div class="lsa" title="Free Online Educational Platform">
+                    <span>Learn</span>
+                    Hub
+                </div>
+                <div id="myNav" class="overlay">
+                    <ul>
+                        <li><a href="Home.html" title="Home" id="home" onclick="Homebtn()">Home</a></li>
+                        <li><a href="Programs.html" title="Programs" id="program" onclick="Progmbtn()">Programs</a></li>
+                        <li><a href="Login.html" title="Login" id="Login" onclick=" Logbtn()">Login</a></li>
+                        <li><a href="Registration.html" title="Registration" id="Registration" onclick="admbtn()">Registration</a></li>
+                        <li><a href="Contact_us.html" title="Contact us" id="contact" onclick="Contbtn()">Contact us</a></li>
+                    </ul>
+                </div>
+                <!-- Hamburger Menu  -->
+                <div onclick="classgen(this)" class="mainbar" id="mainbar">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </nav>
+    </header><br /><br /><br />
+
+    <!-- ------------------------------------------------------------------------------- -->
+    <!-- Registration -->
+    <section id="registration-form">
+        <div id="registration-form">
+            <h2>Registration Form</h2>
+            <form action="#">
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="name-initials">Name with Initials</label>
+                    <input type="text" id="name-initials" name="name-initials">
+                </div>
+                <div class="form-group">
+                    <label for="id-card">ID Card Number</label>
+                    <input type="text" id="id-card" name="id-card" required>
+                </div>
+                <div class="form-group">
+                    <label for="id-picture">ID Card Picture</label>
+                    <input type="file" id="id-picture" name="id-picture" accept="image/*" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="education">Education Qualification</label>
+                    <input type="text" id="education" name="education">
+                </div>
+                <button type="submit"><h3>Submit</h3></button>
+            </form>
+        </div>
+    </section><br><br><br><br><br>
+    <!-- footer  -->
+    <div class="contact-1">
+        <footer class="footer">
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social-icon">
+                <li class="social-icon__item">
+                    <a class="social-icon__link"
+                       href="https://www.facebook.com/profile.php?id=100063747202566" target="_blank">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </li>
+                <li class="social-icon__item">
+                    <a class="social-icon__link"
+                       href="https://www.facebook.com/profile.php?id=100063747202566" target="_blank">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                </li>
+                <li class="social-icon__item">
+                    <a class="social-icon__link"
+                       href="https://www.facebook.com/profile.php?id=100063747202566" target="_blank">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </li>
+                <li class="social-icon__item">
+                    <a class="social-icon__link"
+                       href="https://www.facebook.com/profile.php?id=100063747202566" target="_blank">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+
+            <p>&copy;2024 LernHub | All Rights Reserved | Design and Develop by <a style="color: black; font-weight: 500;  " class="Darshana">Darshana</a></p>
+        </footer>
+    </div>
+
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root" title="Chat With us"></div>
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat" title="Chat With us by just clicking">
+    </div>
+    <!-- js/  -->
+    <script src="assets/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </div>
+</body>
+</html>

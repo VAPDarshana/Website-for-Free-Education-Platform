@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to LearnHub</title>
+    <!-- icon from Fontawesome -->
+    <script src="https://kit.fontawesome.com/964aa041f9.js" crossorigin="anonymous"></script>
+    <!-- Css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Tab bar icon  -->
+    <link rel="icon" type="image/png" href="assets/Logo-1.png" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Hearder -->
+    <header>
+        <nav>
+            <div class="bar">
+                <div class="logo">
+                    <img src="assets/Logo-1.png" alt="LernHub LOGO" title="LernHub LOGO">
+                </div>
+                <div class="lsa" title="Free Online Educational Platform">
+                    <span>Learn</span>
+                    Hub
+                </div>
+                <div id="myNav" class="overlay">
+                    <ul>
+                        <li><a href="Home.html" title="Home" id="home" onclick="Homebtn()">Home</a></li>
+                        <li><a href="Programs.html" title="Programs" id="program" onclick="Progmbtn()">Programs</a></li>
+                        <li><a href="Login.html" title="Login" id="Login" onclick=" Logbtn()">Login</a></li>
+                        <li><a href="Registration.html" title="Registration" id="Registration" onclick="admbtn()">Registration</a></li>
+                        <li><a href="Contact_us.html" title="Contact us" id="contact" onclick="Contbtn()">Contact us</a></li>
+                    </ul>
+                </div>
+                <!-- Hamburger Menu  -->
+                <div onclick="classgen(this)" class="mainbar" id="mainbar">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br><br><br>
+    <!-- --------------------------------------------------------------------- -->
+            <div id="home">
+                <section id="main">
+                    <div class="bannar">
+                        <img src="assets/school-blackboard-image.jpg" alt="" srcset="">
+                        <h1 class="site-titel">LearnHub</h1>
+                        <div class="search-div">
+                            <input type="text" class="search" placeholder="Institute Name">
+                            <button class="search-submit-but" type="submit">search</button>
+                        </div>
+                    </div><br />
+
+                    <h1>Most Popular Course</h1>
+                    <hr id="card-hr" />
+                    <div class="card">
+                        <!-- 1 -->
+                        <div class="card-element">
+                            <div class="img">
+                                <img src="assets/dpeducation.jpg" alt="" srcset="">
+                            </div>
+                            <h3><i class="fa-solid fa-house-chimney-user"></i><span id="card-titel"> DP Education</span></h3>
+                            <p id="institute-dris"><i class="fa-solid fa-location-dot"></i>We believe in nurturing curiosity, creativity, and confidence in each individual, equipping them with lifelong skills and knowledge.</p>
+                            <div class="card-butt"><br /><br /><br /><br />
+                                <a href="https://www.dpeducation.lk/" title="follow"><button class="card-sub-butt" id="butt-follow"><i class="fa-solid fa-star"></i> follow</button></a>
+                                <button class="card-sub-butt" id="butt-share"><i class="fa-solid fa-square-share-nodes"></i>share</button>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="card-element">
+                            <div class="img">
+                                <img src="assets/guru-logo.gif" alt="" srcset="">
+                            </div>
+                            <h3><i class="fa-solid fa-house-chimney-user"></i><span id="card-titel"> Guru.lk</span></h3>
+                            <p id="institute-dris">
+                                <i class="fa-solid fa-location-dot"></i>Guru.lk has more than 500 courses under various categories, spanning from school
+                                education to professional education, general skills, entrepreneurial skills, soft skills, IT skills and many
+                                more.
+                            </p>
+                            <div class="card-butt"><br /><br />
+                                <a href="https://guru.lk/" title="follow"><button class="card-sub-butt" id="butt-follow"><i class="fa-solid fa-star"></i> follow</button></a>
+                                <button class="card-sub-butt" id="butt-share"><i class="fa-solid fa-square-share-nodes"></i>share</button>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="card-element">
+                            <div class="img">
+                                <img src="assets/e-thaksalawa.jpg" alt="" srcset="">
+                            </div>
+                            <h3><i class="fa-solid fa-house-chimney-user"></i><span id="card-titel"> e-තක්සලාව</span></h3>
+                            <p id="institute-dris"><i class="fa-solid fa-location-dot"></i>e-thaksalawa provides resources aligning to all the subjects from Grade 1 to Grade 13 considering the GCE (A/L) streams and also general knowledge with areas to be known as a student or a person in a community.</p>
+                            <div class="card-butt"><br /><br />
+                                <a href="https://www.e-thaksalawa.moe.gov.lk/Si/index.php " title="follow"><button class="card-sub-butt" id="butt-follow"><i class="fa-solid fa-star"></i> follow</button></a>
+                                <button class="card-sub-butt" id="butt-share"><i class="fa-solid fa-square-share-nodes"></i>share</button>
+                            </div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="card-element">
+                            <div class="img">
+                                <img src="assets/uom.jpg" alt="" srcset="">
+                            </div>
+                            <h3><i class="fa-solid fa-house-chimney-user"></i><span id="card-titel"> UoM - Open Learning Platform</span></h3>
+                            <p id="institute-dris"><i class="fa-solid fa-location-dot"></i>This Open Learning Platform provides you multiple learning paths for different careers in IT. All courses are fully online and self-paced to access at your convenience. They consist of practical exercises curated by the industry and academia to develop the required skills.</p>
+                            <div class="card-butt">
+                                <a href="https://open.uom.lk/" title="follow"><button class="card-sub-butt" id="butt-follow"><i class="fa-solid fa-star"></i> follow</button></a>
+                                <button class="card-sub-butt" id="butt-share"><i class="fa-solid fa-square-share-nodes"></i>share</button>
+                            </div>
+                        </div>
+                        <!-- 5 -->
+                        <div class="card-element">
+                            <div class="img">
+                                <img src="assets/w3.jpg" alt="" srcset="">
+                            </div>
+                            <h3><i class="fa-solid fa-house-chimney-user"></i><span id="card-titel"> W3School</span></h3>
+                            <p id="institute-dris"><i class="fa-solid fa-location-dot"></i>W3Schools is a school for web developers, covering all the aspects of web development</p>
+                            <div class="card-butt"><br /><br /><br /><br /><br />
+                                <a href="https://www.w3schools.com/" title="follow"><button class="card-sub-butt" id="butt-follow"><i class="fa-solid fa-star"></i> follow</button></a>
+                                <button class="card-sub-butt" id="butt-share"><i class="fa-solid fa-square-share-nodes"></i>share</button>
+                            </div>
+                        </div>
+                        <!-- 6 -->
+                        <div class="card-element">
+                            <div class="img">
+                                <img src="assets/Lanka-Academy-Logo.png" alt="" srcset="">
+                            </div>
+                            <h3><i class="fa-solid fa-house-chimney-user"></i><span id="card-titel"> Lanka Academy</span></h3>
+                            <p id="institute-dris"><i class="fa-solid fa-location-dot"></i>We at Lanka Academy provide you the safest and most effective approach to study abroad</p>
+                            <div class="card-butt"><br /><br /><br /><br /><br />
+                                <a href="https://www.lankaacademy.lk/" title="follow"><button class="card-sub-butt" id="butt-follow"><i class="fa-solid fa-star"></i> follow</button></a>
+                                <button class="card-sub-butt" id="butt-share"><i class="fa-solid fa-square-share-nodes"></i>share</button>
+                            </div>
+                        </div>
+                        <!-- 7 -->
+                        <div class="card-element">
+                            <div class="img">
+                                <img src="assets/eSiphala.jpg" alt="" srcset="">
+                            </div>
+                            <h3><i class="fa-solid fa-house-chimney-user"></i><span id="card-titel"> eSiphala</span></h3>
+                            <p id="institute-dris"><i class="fa-solid fa-location-dot"></i>Online Education with eSiphalaBe an achiever withSri Lanka's Largest e-learning platform. Discover the best distant learning classrooms through eSiphala.lk </p>
+                            <div class="card-butt"><br /><br /><br />
+                                <a href="https://www.esiphala.lk/" title="follow"><button class="card-sub-butt" id="butt-follow"><i class="fa-solid fa-star"></i> follow</button></a>
+                                <button class="card-sub-butt" id="butt-share"><i class="fa-solid fa-square-share-nodes"></i>share</button>
+                            </div>
+                        </div>
+                        <!-- 8 -->
+                        <div class="card-element">
+                            <div class="img">
+                                <img src="assets/gelp.jpg" alt="" srcset="">
+                            </div>
+                            <h3><i class="fa-solid fa-house-chimney-user"></i><span id="card-titel"> Government e-Learning Platform</span></h3>
+                            <p id="institute-dris"><i class="fa-solid fa-location-dot"></i>The Government eLearning Platform (GeLP) is the prime digital learning platform for government officials of Sri Lanka. This platform facilitates continuous learning for government officials and multi-tenant facilities for government organizations</p>
+                            <div class="card-butt">
+                                <a href="http://www.gelp.gov.lk/" title="follow"><button class="card-sub-butt" id="butt-follow"><i class="fa-solid fa-star"></i> follow</button></a>
+                                <button class="card-sub-butt" id="butt-share"><i class="fa-solid fa-square-share-nodes"></i>share</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="more-butt"><i class="fa-solid fa-file-export"></i>More</button>
+                </section>
+                <!-- footer  -->
+                <br><br><br><br>
+                <div class="contact-1">
+                    <footer class="footer">
+                        <div class="waves">
+                            <div class="wave" id="wave1"></div>
+                            <div class="wave" id="wave2"></div>
+                            <div class="wave" id="wave3"></div>
+                            <div class="wave" id="wave4"></div>
+                        </div>
+                        <ul class="social-icon">
+                            <li class="social-icon__item">
+                                <a class="social-icon__link"
+                                   href="https://www.facebook.com/profile.php?id=100063747202566" target="_blank">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="social-icon__item">
+                                <a class="social-icon__link"
+                                   href="https://www.facebook.com/profile.php?id=100063747202566" target="_blank">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="social-icon__item">
+                                <a class="social-icon__link"
+                                   href="https://www.facebook.com/profile.php?id=100063747202566" target="_blank">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="social-icon__item">
+                                <a class="social-icon__link"
+                                   href="https://www.facebook.com/profile.php?id=100063747202566" target="_blank">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <p>&copy;2024 LernHub | All Rights Reserved | Design and Develop by <a style="color: black; font-weight: 500;  " class="Darshana">Darshana</a></p>
+                    </footer>
+                </div>
+
+                <!-- Messenger Chat Plugin Code -->
+                <div id="fb-root" title="Chat With us"></div>
+                <!-- Your Chat Plugin code -->
+                <div id="fb-customer-chat" class="fb-customerchat" title="Chat With us by just clicking">
+                </div>
+                <!-- js/  -->
+                <script src="assets/js/script.js"></script>
+                <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            </div>
+
+</body>
+</html>
